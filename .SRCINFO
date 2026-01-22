@@ -1,7 +1,7 @@
 pkgbase = prex
 	pkgdesc = Run Windows executables in a running game's Proton prefix
 	pkgver = 0.5.2
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/eyenalxai/prex
 	arch = x86_64
 	license = MIT

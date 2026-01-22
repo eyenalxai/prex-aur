@@ -1,6 +1,8 @@
+# Maintainer: roehistat <mail at iyxeyl.me>
+
 pkgname=prex
 pkgver=0.5.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Run Windows executables in a running game's Proton prefix"
 arch=('x86_64')
 url="https://github.com/eyenalxai/${pkgname}"
