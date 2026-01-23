@@ -1,22 +1,22 @@
 # Maintainer: roehistat <mail at iyxeyl.me>
 
 pkgname=prex
-pkgver=0.5.2
-pkgrel=2
+pkgver=0.5.3
+pkgrel=1
 pkgdesc="Run Windows executables in a running game's Proton prefix"
 arch=('x86_64')
 url="https://github.com/eyenalxai/${pkgname}"
-license=('MIT')
+license=('GPL3')
 depends=('gcc-libs' 'sqlite')
 makedepends=('cargo')
 options=('!debug' 'strip')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz")
-sha256sums=('d13bd660a0db2aeda08e2191760d36bf27d5ee9b3722c7d7af79705f46406b74')
+sha256sums=('81d36af1e13773e6ae592c9b9e2bfa687ea92cc4b93e0114c5109220baff5c8a')
 
 prepare() {
   cd "$pkgname-$pkgver"
   export RUSTUP_TOOLCHAIN=stable
-  cargo fetch --locked --target "$(rustc -vV | sed -n 's/host: //p')"
+  cargo fetch --locked --target host-tuple
 }
 
 build() {
@@ -30,4 +30,5 @@ package() {
   cd "$pkgname-$pkgver"
   install -Dm0755 -t "$pkgdir/usr/bin/" "target/release/$pkgname"
   install -Dm0644 -t "$pkgdir/usr/share/applications/" "$pkgname.desktop"
+  install -Dm0644 -t "$pkgdir/usr/share/licenses/$pkgname/" LICENSE
 }
