@@ -2,8 +2,8 @@
 
 pkgname=prex
 pkgver=0.5.3
-pkgrel=1
-pkgdesc="Run Windows executables in a running game's Proton prefix"
+pkgrel=2
+pkgdesc="Run Windows executables in Steam Proton prefixes"
 arch=('x86_64')
 url="https://github.com/eyenalxai/${pkgname}"
 license=('GPL3')
