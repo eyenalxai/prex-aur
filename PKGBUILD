@@ -2,7 +2,7 @@
 
 pkgname=prex
 pkgver=0.5.4
-pkgrel=2
+pkgrel=1
 pkgdesc="Run Windows executables in Steam Proton prefixes"
 arch=('x86_64')
 url="https://github.com/eyenalxai/${pkgname}"
