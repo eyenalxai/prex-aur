@@ -1,6 +1,6 @@
 pkgbase = prex
 	pkgdesc = Run Windows executables in Steam Proton prefixes
-	pkgver = 0.5.3
+	pkgver = 0.5.4
 	pkgrel = 2
 	url = https://github.com/eyenalxai/prex
 	arch = x86_64
@@ -10,7 +10,7 @@ pkgbase = prex
 	depends = sqlite
 	options = !debug
 	options = strip
-	source = prex-0.5.3.tar.gz::https://github.com/eyenalxai/prex/archive/v0.5.3.tar.gz
-	sha256sums = 81d36af1e13773e6ae592c9b9e2bfa687ea92cc4b93e0114c5109220baff5c8a
+	source = prex-0.5.4.tar.gz::https://github.com/eyenalxai/prex/archive/v0.5.4.tar.gz
+	sha256sums = 64b9813f79f974453cb2af76ac7d6fdd0b90c193281fa834b8d7a64e4ee0912c
 
 pkgname = prex

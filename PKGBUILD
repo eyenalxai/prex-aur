@@ -1,7 +1,7 @@
 # Maintainer: roehistat <mail at iyxeyl.me>
 
 pkgname=prex
-pkgver=0.5.3
+pkgver=0.5.4
 pkgrel=2
 pkgdesc="Run Windows executables in Steam Proton prefixes"
 arch=('x86_64')
@@ -11,7 +11,7 @@ depends=('gcc-libs' 'sqlite')
 makedepends=('cargo')
 options=('!debug' 'strip')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz")
-sha256sums=('81d36af1e13773e6ae592c9b9e2bfa687ea92cc4b93e0114c5109220baff5c8a')
+sha256sums=('64b9813f79f974453cb2af76ac7d6fdd0b90c193281fa834b8d7a64e4ee0912c')
 
 prepare() {
   cd "$pkgname-$pkgver"
