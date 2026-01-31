@@ -1,7 +1,7 @@
 pkgbase = prex
 	pkgdesc = Run Windows executables in Steam Proton prefixes
 	pkgver = 0.5.4
-	pkgrel = 2
+	pkgrel = 3
 	url = https://github.com/eyenalxai/prex
 	arch = x86_64
 	license = GPL3
